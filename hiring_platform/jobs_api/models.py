@@ -17,3 +17,10 @@ class Job(models.Model):
     location = models.CharField(max_length=200)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+class Application(models.Model):
+    job = models.ForeignKey(Job, on_delete=models.CASCADE)
+    candidate_name = models.CharField(max_length=200)
+    candidate_email = models.EmailField()
+    cv = models.FileField(upload_to='cvs/')
+    applied_at = models.DateTimeField(auto_now_add=True)
