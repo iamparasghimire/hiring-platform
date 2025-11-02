@@ -5,3 +5,8 @@ class JobCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = JobCategory
         fields = '__all__'
+
+class CompanySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Company
+        fields = '__all__'
