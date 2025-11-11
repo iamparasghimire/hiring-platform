@@ -18,6 +18,7 @@ db.sqlite3-journal
 /media
 /staticfiles
 *.pot
+migrations/__pycache__/
 
 # Environment
 .env
@@ -33,6 +34,7 @@ yarn-error.log
 dist/
 out/
 build/
+package-lock.json
 
 # IDE
 .vscode/
