@@ -1,7 +1,62 @@
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
 venv/
+env/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django
+*.log
 db.sqlite3
+db.sqlite3-journal
+/media
+/staticfiles
+*.pot
+
+# Environment
 .env
+.env.local
+.env.*.local
+
+# Node
 node_modules/
+npm-debug.log
+yarn-error.log
 .next/
+.nuxt/
+dist/
+out/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# Misc
+*.bak
+*.tmp
+create_commit_history.sh
+generate_commits.sh
+verify_installation.sh
